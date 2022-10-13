@@ -19,12 +19,12 @@ public class Autodrop {
 		List<WebElement> Dropoptions = driver.findElements(By.xpath("//ul[@role = 'listbox']//ul//li[@role = 'presentation']//div[@role = 'option']"));
 		System.out.println(Dropoptions.size());
 		
-		/*for (WebElement Opt:Dropoptions) {
+		for (WebElement Opt:Dropoptions) {
 			if(Opt.getText().contains("beginners")){
 				Opt.click();
 				break;
 			}
-		}*/
+		}
 		
 		drpmeth(Dropoptions, "orialspoint");
 		
