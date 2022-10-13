@@ -30,7 +30,7 @@ public class Datadriven {
 			driver.findElement(By.name("email")).sendKeys(UserName);
 			Thread.sleep(2000);
 			driver.findElement(By.id("pass")).sendKeys(Password);
-			Thread.sleep(3000);
+	
 			driver.findElement(By.xpath("//button[@type = 'submit']")).click();
 			driver.navigate().refresh();
 			
